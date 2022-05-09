@@ -1,0 +1,230 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     font-family: Helvetica, Georgia, Sans-Serif;
+     background: rgb(255, 247, 213);
+}
+
+/* ------------- NAV & BANNER ------------- */
+header {
+     background-color: #101010;
+     padding: 10px;
+     overflow: auto;
+}
+
+header .logo a {
+     margin-top: 10px;
+     color: #cab;
+     font-size: 25px;
+     text-decoration: none;
+     float: left;
+     transition: 0.3s;
+}
+
+header .logo a:hover {
+     color: #fff;
+}
+
+header nav {
+     float: right;
+}
+
+header nav ul {
+     list-style: none;
+     transition: 0.3s;
+}
+
+header nav ul li {
+     display: inline;
+}
+
+header nav ul li a {
+     color: #cab;
+     font-size: 17px;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 10px;
+     transition: 0.3s;
+}
+
+header nav ul li a:hover {
+     color: #fff;
+}
+
+.hamburgerIcon {
+     font-size: 25px;
+     color: #865FC5;
+     float: left;
+     margin-top: 7px;
+     margin-right: 10px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.hamburgerIcon:hover {
+     color: #fff;
+}
+
+.sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+}
+
+.sidenav .innerNav {
+     margin-top: 10px;
+}
+
+.sidenav .innerNav a {
+     padding-top: 10px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 20px;
+     color: #818181;
+     text-align: center;
+     display: block;
+     letter-spacing: 2px;
+     transition: 0.3s;
+}
+
+.sidenav .innerNav a:hover {
+     animation: twist 0.3s normal forwards ease-in-out;
+}
+
+.sidenav a:hover {
+     color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+     position: absolute;
+     top: 10px;
+     right: 25px;
+     transition: 0.3s;
+     color: #818181;
+     display: block;
+     text-decoration: none;
+     font-size: 36px;
+     margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+     animation: rotate180 0.5s normal forwards ease-in-out;
+}
+
+.sidenav .social {
+     margin-top: 30px;
+     text-align: center;
+}
+
+.sidenav .social a {
+     font-size: 40px;
+     margin: 0 10px 0 10px;
+}
+
+.sidenav .social .fa-github {
+     color: #CC893A;
+     transition: 0.3s;
+}
+
+.sidenav .social .fa-twitter {
+     color: #865FC5;
+     transition: 0.3s;
+}
+
+.sidenav .social .fa-github:hover {
+     color: #fff;
+}
+
+.sidenav .social .fa-twitter:hover {
+     color: #fff;
+}
+
+.sidenav .support {
+     text-align: center;
+     font-size: 17px;
+}
+
+.sidenav .support a {
+     background-color: #000;
+     color: #fff;
+     padding: 10px 25px;
+     display: inline-block;
+     text-decoration: none;
+     margin-top: 10px;
+     transition: 0.3s;
+}
+
+.sidenav .support a:hover {
+     background-color: #fff;
+     color: #000;
+     box-shadow: 5px 5px 5px #865FC5;
+}
+ 
+.sidenav .support .fa-heart {
+     color: #B0190B;
+}
+
+.sidenav .support .fa-envelope {
+     color: #035D9A;
+}
+
+footer {
+     padding: 5px;
+     text-align: center;
+     color: #fff;
+}
+
+footer a {
+     color: #865FC5;
+     text-decoration: none;
+     transition: 0.3s;
+}
+
+footer a:hover {
+     color: #FFE300;
+     text-shadow: 5px 5px 5px #865FC5;
+     padding: 2px;
+     border: 1px solid #333;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+ @media screen and (max-height: 450px) {
+     .sidenav {
+         padding-top: 15px;
+    }
+
+    .sidenav a {
+         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+     header nav ul {
+        display: none;
+   }
+
+     header .logo a {
+      margin-top: 0;
+   }
+
+     .hamburgerIcon {
+        margin-top: 0;
+   }
+}
+
+@keyframes rotate180 {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(180deg); }
+}
+
+@keyframes twist {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(5deg); }
+}

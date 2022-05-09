@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Contact.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet"href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<style>
+		body {
+		
+            background-color: rgb(255, 247, 213);
+
+		}
+		
+		.banner .headText {
+			font-size: 30px;
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		.banner .headText span {
+			 color: #0c0c0c;
+			 font-size: 50px; 
+			}
+
+		.banner .subText {
+			font-size: 20px;
+			text-align: center;
+			color: rgb(8, 8, 8);
+			padding-top: 10px;
+		}
+
+		.banner .content {
+			height: 60%;
+			margin-top: 5%;
+		}
+
+		.banner .content .card {
+			width: 300px;
+			height: 300px;
+			background-color: rgb(185, 146, 146);
+			box-shadow: 0px 5px 5px #865FC5;
+			display: inline-block;
+			margin: 0px 5px 0px 5px;
+		}
+
+		.banner .content .card img {
+			width: 100%;
+			cursor: pointer;
+			opacity: 0.8;
+			transition: 0.3s;
+		}
+
+		.banner .content .card img:hover {
+			opacity: 1;
+		}
+		
+		.banner .content .card h3 {
+			color: rgb(247, 244, 244);
+			text-align: center;
+		}
+
+		.banner .content .card a {
+			background-color: #111111;
+			color: #fff;
+			padding: 5px 25px;
+			font-size: 17px;
+			display: inline-block;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.banner .content .card a:hover {
+			background-color: #333;
+			letter-spacing: 2px;
+		}
+
+		
+		</style>
+	</head>
+	<body>
+		<header id='header'>
+			<!-- Side Navigation -->
+			<div id="sideNav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<hr style="border: 2px solid #fff;">
+				<div class="innerNav">
+					<a href="w1.html"><i class="fa fa-home"></i> Home</a>
+					<a href="Product.html"><i class="fa fa-search"></i> Products</a>
+					<a href="Login.html"><i class="fa fa-key"></i> Login</a>
+					<a href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+				</div>
+				
+			</div>
+
+			<!-- Main Nav -->
+			<span class="hamburgerIcon" onclick="openNav()">&#9776;</span>
+			<nav id="mainNav">
+				<ul>
+					<li><a href="w1.html">Home</a>
+					</li>
+					   <li><a href="Product.html">Product page</a>
+					</li>
+					   <li><a href="Login.html">Log in</a>
+					</li>
+                    <li><a href="Cart.html">Cart</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+        <center><div class="contact-page">
+     <h2><ul>Contact us with any questions or queries</ul></h2>
+     <div class="contact-info">
+       <div class="item">
+       <i class="icon fas fa-home"></i>
+       Food ordering
+       </div>
+       <div class="item">
+       <i class="icon fas fa-phone"></i>
+       0161 1234567
+       </div>
+       <div class="item">
+       <i class="icon fas fa-envelope"></i>
+       foodordering@gmail.com
+       </div>
+       <div class="item">
+       <i class="icon fas fa-clock"></i>
+       our service times are 
+       <br>Mon - Fri  ,  8AM to 6PM
+       <br>we welcome any feedback that your may have and will try to respond as soon as we can.
+       </div>
+     </div>
+     <form action="" class="contact-form">
+         <input type="text"class="textb"placeholder="Enter your Name">
+         <input type="email"class="textb"placeholder="Enter your Email">
+         <textarea placeholder="Type any message or feedback that you may have"></textarea>
+         <input type="submit"class="btn" value="Send">
+     </form>
+   </div>
+</center>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		// side naigation //
+		function openNav() {
+			document.getElementById("sideNav").style.width = "250px";
+		}
+		function closeNav() {
+			document.getElementById("sideNav").style.width = "0";
+		}
+		</script>
+	</body>
+</html>
